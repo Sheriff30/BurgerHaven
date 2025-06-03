@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
-import Logo from "./Logo";
 
 export default function Header() {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -13,7 +12,11 @@ export default function Header() {
   return (
     <header className="flex justify-between items-center  gap-4">
       {/* LOGO */}
-      <Logo />
+      <img
+        src="https://navigatorcharters.com/wp-content/uploads/2023/10/Navigator-Charters-Logo-White.png"
+        alt="Navigator Charters Logo"
+        className="w-40"
+      />{" "}
       {/* Nav */}
       <nav className="hidden md:block">
         <ul className=" flex justify-between items-center gap-6 uppercase">
@@ -45,7 +48,6 @@ export default function Header() {
       <div className="md:hidden" onClick={handleMobileNavOpen}>
         <RxHamburgerMenu className="text-2xl" />
       </div>
-
       {isMobileNavOpen && (
         <MobileNav handleMobileNavOpen={handleMobileNavOpen} />
       )}
