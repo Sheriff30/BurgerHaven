@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+.bg-navy-black-gradient {
+  background: linear-gradient(to bottom, #1e3a8a, #000000);
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
