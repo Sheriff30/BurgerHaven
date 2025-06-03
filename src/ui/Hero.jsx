@@ -6,7 +6,7 @@ import Header from "./Header";
 
 export default function Hero() {
   return (
-    <div className="h-dvh min-h-dvh text-white grid grid-rows-[auto_1fr]">
+    <div className=" h-dvh min-h-dvh text-white grid grid-rows-[auto_1fr]">
       <div className="bg-navy-black-gradient py-2 px-4">
         <div className="container flex justify-center sm:justify-between items-center gap-3  flex-wrap">
           <div className="flex  items-center gap-2 md:gap-3 flex-wrap justify-center sm:justify-between">
@@ -45,6 +45,7 @@ export default function Hero() {
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
+          height: "100%",
         }}
       >
         <div className="container py-4 h-full grid grid-rows-[auto_1fr] text-white gap-4">
