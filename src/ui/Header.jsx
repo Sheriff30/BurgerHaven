@@ -57,7 +57,7 @@ export default function Header() {
 
 const MobileNav = ({ handleMobileNavOpen }) => {
   return (
-    <div className=" md:hidden bg-white/50 w-dvw h-dvh absolute top-0 left-0 z-10  backdrop-blur-sm flex flex-col p-6 text-2xl text-[#002347] ">
+    <div className=" md:hidden bg-white/50 w-dvw h-dvh fixed top-0 left-0 z-10  backdrop-blur-sm flex flex-col p-6 text-2xl text-[#002347] ">
       <div className="flex justify-end" onClick={handleMobileNavOpen}>
         <IoMdClose className="text-2xl" />
       </div>

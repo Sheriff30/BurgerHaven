@@ -56,11 +56,6 @@ export default function Hero() {
               ORANGE BEACH FISHING <br /> CHARTERS WITH NAVIGATOR <br />{" "}
               CHARTERS
               <br />
-              <span>
-                <span>
-                  <span></span>
-                </span>
-              </span>
             </h1>
             <h2 className="text-xl md:text-2xl lg:text-3xl mb-12">
               BOOK YOUR ORANGE BEACH FISHING CHARTER TODAY!
