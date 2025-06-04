@@ -62,7 +62,7 @@ export default function Section5() {
   };
 
   return (
-    <div className="py-15 bg-navy-black-gradient text-white px-4 relative pb-20">
+    <div className="py-15 bg-navy-black-gradient text-white px-4 relative pb-20 overflow-hidden">
       <h2 className="text-center leading-snug font-bold text-2xl md:text-4xl lg:text-6xl tracking-widest mb-10 uppercase">
         navigator charters Reviews
       </h2>
@@ -70,6 +70,7 @@ export default function Section5() {
         <style jsx global>{`
           .slick-dots {
             bottom: -40px;
+            margin-left: -20px;
           }
           .slick-dots li {
             margin: 0 8px;
