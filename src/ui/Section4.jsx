@@ -108,13 +108,16 @@ export default function Section4() {
                 : {}
             }
           >
-            <motion.img
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.3 }}
-              src={charter.image}
-              alt="  "
-              className="w-full h-[425px] object-cover"
-            />
+            <div className="overflow-hidden">
+              <motion.img
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+                src={charter.image}
+                alt="  "
+                className="w-full h-[425px] object-cover"
+              />
+            </div>
+
             <div className="flex flex-col gap-4 p-6 text-white">
               <h3 className="text-xl md:text-2xl lg:text-4xl font-light text-center uppercase">
                 {charter.title}
