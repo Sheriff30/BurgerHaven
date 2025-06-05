@@ -50,7 +50,7 @@ export default function Section6() {
   return (
     <div
       ref={sectionRef}
-      className={`py-15 bg-navy-black-gradient text-white px-4 grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 lg:gap-10 items-center transition-all duration-1000 transform ${
+      className={`py-15 overflow-x-hidden bg-navy-black-gradient text-white px-4 grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 lg:gap-10 items-center transition-all duration-1000 transform ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
