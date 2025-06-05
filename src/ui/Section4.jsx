@@ -6,6 +6,7 @@ import {
   FaCalendarAlt,
   FaExclamationTriangle,
 } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export default function Section4() {
   const fishingCharters = [
@@ -79,14 +80,24 @@ export default function Section4() {
           }
         `}
       </style>
-      <h2 className="text-center leading-snug font-bold text-2xl md:text-4xl lg:text-6xl tracking-widest mb-10 ">
+      <motion.h2
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="text-center leading-snug font-bold text-2xl md:text-4xl lg:text-6xl tracking-widest mb-10 "
+      >
         Popular Orange Beach Fishing Charter <br /> Packages
-      </h2>
+      </motion.h2>
 
-      <div className="flex flex-wrap gap-15 justify-center  mx-auto">
-        {fishingCharters.map((charter) => (
-          <div
+      <div className="flex flex-wrap gap-15 justify-center mx-auto">
+        {fishingCharters.map((charter, index) => (
+          <motion.div
             key={charter.title}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: index * 0.2 }}
             className={`bg-[#010e1c] max-w-[560px] w-full ${
               charter.title === "Snapper Charters" &&
               "border-[#FF0000] bg-[#FF0000] border-2 animate-pulse"
@@ -97,12 +108,14 @@ export default function Section4() {
                 : {}
             }
           >
-            <img
+            <motion.img
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
               src={charter.image}
               alt="  "
               className="w-full h-[425px] object-cover"
             />
-            <div className=" flex flex-col gap-4 p-6 text-white">
+            <div className="flex flex-col gap-4 p-6 text-white">
               <h3 className="text-xl md:text-2xl lg:text-4xl font-light text-center uppercase">
                 {charter.title}
               </h3>
@@ -112,7 +125,7 @@ export default function Section4() {
                   : `$${charter.price}`}
               </p>
 
-              <div className="flex flex-col gap-2 font-light mb-5 ">
+              <div className="flex flex-col gap-2 font-light mb-5">
                 <div className="flex items-center gap-2">
                   <FaClock className="text-xl" />
                   {charter.duration}
@@ -144,16 +157,18 @@ export default function Section4() {
                 )}
               </div>
 
-              <a
+              <motion.a
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
                 href="#"
                 className={`bg-white text-black px-4 py-2 uppercas mx-auto text-xl uppercase  ${
                   charter.title === "Snapper Charters" && " !text-[#FF0000]"
                 }`}
               >
                 {charter.booking}
-              </a>
+              </motion.a>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
