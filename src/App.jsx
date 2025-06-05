@@ -7,6 +7,8 @@ import Section5 from "./ui/Section5";
 import FAQ from "./ui/FAQ";
 import Section6 from "./ui/Section6";
 import Contact from "./ui/Contact";
+import Footer from "./ui/Footer";
+
 export default function App() {
   return (
     <div>
@@ -18,6 +20,7 @@ export default function App() {
       <FAQ />
       <Section6 />
       <Contact />
+      <Footer />
     </div>
   );
 }
