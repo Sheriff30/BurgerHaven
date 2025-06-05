@@ -6,7 +6,7 @@ import Header from "./Header";
 
 export default function Hero() {
   return (
-    <div className=" h-dvh min-h-dvh text-white grid grid-rows-[auto_1fr]">
+    <div className="h-dvh min-h-dvh text-white grid grid-rows-[auto_1fr]">
       <div className="bg-navy-black-gradient py-2 px-4">
         <div className="container flex justify-center sm:justify-between items-center gap-3  flex-wrap">
           <div className="flex  items-center gap-2 md:gap-3 flex-wrap justify-center sm:justify-between">
@@ -38,21 +38,29 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div
-        className="px-4 "
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://navigatorcharters.com/wp-content/uploads/2023/10/Nav-bg.webp)`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          height: "100%",
-        }}
-      >
-        <div className="container py-4 h-full grid grid-rows-[auto_1fr] text-white gap-4">
+      <div className="px-4 relative">
+        <div className="absolute inset-0 w-full h-full overflow-hidden">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute min-w-full min-h-full object-cover"
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+            }}
+          >
+            <source src="/hero-bg.mp4" type="video/mp4" />
+          </video>
+          <div className="absolute inset-0   bg-black/30"></div>
+        </div>
+        <div className="container py-4 h-full grid grid-rows-[auto_1fr] text-white gap-4 relative z-10">
           <Header />
 
-          <div className="flex justify-center  items-center   flex-col gap-6 text-center ">
-            <h1 className="text-center leading-snug font-bold text-2xl md:text-4xl lg:text-6xl tracking-widest ">
+          <div className="flex justify-center items-center flex-col gap-6 text-center">
+            <h1 className="text-center leading-snug font-bold text-2xl md:text-4xl lg:text-6xl tracking-widest">
               ORANGE BEACH FISHING <br /> CHARTERS WITH NAVIGATOR <br />{" "}
               CHARTERS
               <br />
