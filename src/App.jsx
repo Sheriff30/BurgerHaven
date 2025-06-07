@@ -7,6 +7,7 @@ import Gallery from "./pages/Gallery";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
 import Layout from "./ui/Layout";
+import Layout2 from "./ui/Layout2";
 
 export default function App() {
   return (
@@ -14,11 +15,13 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/reviews" element={<Reviews />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/faq" element={<FAQ />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/" element={<Layout2 />}>
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/reviews" element={<Reviews />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/contact" element={<Contact />} />
+          </Route>
         </Route>
       </Routes>
     </Router>

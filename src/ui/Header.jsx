@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -10,42 +10,59 @@ export default function Header() {
     setIsMobileNavOpen(!isMobileNavOpen);
   };
 
+  const navLinkClass = ({ isActive }) =>
+    ` ${isActive ? "border-b-2 border-white" : ""}`;
+
   return (
-    <header className="flex justify-between items-center  gap-4">
+    <header className={`flex justify-between items-center  gap-4 text-white`}>
       {/* LOGO */}
-      <Link to="/">
+      <NavLink to="/">
         <img
           src="https://navigatorcharters.com/wp-content/uploads/2023/10/Navigator-Charters-Logo-White.png"
           alt="Navigator Charters Logo"
           className="w-40"
         />{" "}
-      </Link>
+      </NavLink>
       {/* Nav */}
       <nav className="hidden md:block">
         <ul className=" flex justify-between items-center gap-6 uppercase">
           <li>
-            <Link to="/">Home</Link>
+            <NavLink to="/" className={navLinkClass}>
+              Home
+            </NavLink>
           </li>
           <li>
-            <Link to="/pricing">Pricing</Link>
+            <NavLink to="/pricing" className={navLinkClass}>
+              Pricing
+            </NavLink>
           </li>
           <li>
-            <Link to="/reviews">Reviews</Link>
+            <NavLink to="/reviews" className={navLinkClass}>
+              Reviews
+            </NavLink>
           </li>
           <li>
-            <Link to="/gallery">Gallery</Link>
+            <NavLink to="/gallery" className={navLinkClass}>
+              Gallery
+            </NavLink>
           </li>
           <li>
-            <Link to="/faq">FAQ</Link>
+            <NavLink to="/faq" className={navLinkClass}>
+              FAQ
+            </NavLink>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <NavLink to="/contact" className={navLinkClass}>
+              Contact
+            </NavLink>
           </li>
         </ul>
       </nav>
       {/* Book Now */}
       <div className="border py-2 px-4 hidden md:block">
-        <Link to="/contact">Book Now</Link>
+        <NavLink to="/contact" className={navLinkClass}>
+          Book Now
+        </NavLink>
       </div>
       {/* Mobile Nav */}
       <div className="md:hidden" onClick={handleMobileNavOpen}>
@@ -59,6 +76,9 @@ export default function Header() {
 }
 
 const MobileNav = ({ handleMobileNavOpen }) => {
+  const navLinkClass = ({ isActive }) =>
+    `hover:underline ${isActive ? "underline" : ""}`;
+
   return (
     <div className=" md:hidden bg-white/50 w-dvw h-dvh fixed top-0 left-0 z-10  backdrop-blur-sm flex flex-col p-6 text-2xl text-[#002347] ">
       <div className="flex justify-end" onClick={handleMobileNavOpen}>
@@ -66,34 +86,58 @@ const MobileNav = ({ handleMobileNavOpen }) => {
       </div>
       <ul className=" flex justify-between items-center gap-6 flex-col uppercase my-auto  ">
         <li>
-          <Link to="/" onClick={handleMobileNavOpen}>
+          <NavLink
+            to="/"
+            className={navLinkClass}
+            onClick={handleMobileNavOpen}
+          >
             Home
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/pricing" onClick={handleMobileNavOpen}>
+          <NavLink
+            to="/pricing"
+            className={navLinkClass}
+            onClick={handleMobileNavOpen}
+          >
             Pricing
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/reviews" onClick={handleMobileNavOpen}>
+          <NavLink
+            to="/reviews"
+            className={navLinkClass}
+            onClick={handleMobileNavOpen}
+          >
             Reviews
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/gallery" onClick={handleMobileNavOpen}>
+          <NavLink
+            to="/gallery"
+            className={navLinkClass}
+            onClick={handleMobileNavOpen}
+          >
             Gallery
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/faq" onClick={handleMobileNavOpen}>
+          <NavLink
+            to="/faq"
+            className={navLinkClass}
+            onClick={handleMobileNavOpen}
+          >
             FAQ
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/contact" onClick={handleMobileNavOpen}>
+          <NavLink
+            to="/contact"
+            className={navLinkClass}
+            onClick={handleMobileNavOpen}
+          >
             Contact
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </div>

@@ -1,15 +1,14 @@
 import React from "react";
-import Header from "../ui/Header";
-import Footer from "../ui/Footer";
 import Section4 from "../ui/Section4";
+import Hero from "../ui/Hero";
+import Header from "../ui/Header";
+import Contact from "../ui/Contact";
 
 export default function Pricing() {
   return (
     <div>
-      <Header />
-      <div className="pt-20">
-        <Section4 />
-      </div>
+      <Section4 isPricing={true} />
+      <Contact />
     </div>
   );
 }

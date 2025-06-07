@@ -6,10 +6,7 @@ import Contact from "../ui/Contact";
 export default function ContactPage() {
   return (
     <div>
-      <Header />
-      <div className="pt-20">
-        <Contact />
-      </div>
+      <Contact />
     </div>
   );
 }

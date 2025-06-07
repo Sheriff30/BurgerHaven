@@ -6,10 +6,7 @@ import FAQ from "../ui/FAQ";
 export default function FAQPage() {
   return (
     <div>
-      <Header />
-      <div className="pt-20">
-        <FAQ />
-      </div>
+      <FAQ />
     </div>
   );
 }

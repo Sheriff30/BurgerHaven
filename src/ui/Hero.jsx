@@ -4,9 +4,9 @@ import { IoIosCall, IoLogoInstagram, IoLogoYoutube } from "react-icons/io";
 import { IoMdMail } from "react-icons/io";
 import Header from "./Header";
 
-export default function Hero() {
+export default function Hero({ children }) {
   return (
-    <div className="h-dvh min-h-dvh text-white grid grid-rows-[auto_1fr]">
+    <div className="h-dvh text-white grid grid-rows-[auto_1fr]">
       <div className="bg-navy-black-gradient py-2 px-4">
         <div className="container flex justify-center sm:justify-between items-center gap-3  flex-wrap">
           <div className="flex  items-center gap-2 md:gap-3 flex-wrap justify-center sm:justify-between">
@@ -59,20 +59,7 @@ export default function Hero() {
         <div className="container py-4 h-full grid grid-rows-[auto_1fr] text-white gap-4 relative z-10">
           <Header />
 
-          <div className="flex justify-center items-center flex-col gap-6 text-center">
-            <h1 className="text-center leading-snug font-bold text-2xl md:text-4xl lg:text-6xl tracking-widest">
-              ORANGE BEACH FISHING <br /> CHARTERS WITH NAVIGATOR <br />{" "}
-              CHARTERS
-              <br />
-            </h1>
-            <h2 className="text-xl md:text-2xl lg:text-3xl mb-12">
-              BOOK YOUR ORANGE BEACH FISHING CHARTER TODAY!
-            </h2>
-
-            <a href="#" className="border py-2 px-4 text-lg md:text-xl">
-              Book Now
-            </a>
-          </div>
+          {children}
         </div>
       </div>
     </div>

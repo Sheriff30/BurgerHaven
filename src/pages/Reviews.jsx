@@ -6,10 +6,7 @@ import Section5 from "../ui/Section5";
 export default function Reviews() {
   return (
     <div>
-      <Header />
-      <div className="pt-20">
-        <Section5 />
-      </div>
+      <Section5 />
     </div>
   );
 }
