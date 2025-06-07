@@ -1,26 +1,26 @@
 import React from "react";
-import Hero from "./ui/Hero";
-import Section2 from "./ui/Section2";
-import Section3 from "./ui/Section3";
-import Section4 from "./ui/Section4";
-import Section5 from "./ui/Section5";
-import FAQ from "./ui/FAQ";
-import Section6 from "./ui/Section6";
-import Contact from "./ui/Contact";
-import Footer from "./ui/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Pricing from "./pages/Pricing";
+import Reviews from "./pages/Reviews";
+import Gallery from "./pages/Gallery";
+import FAQ from "./pages/FAQ";
+import Contact from "./pages/Contact";
+import Layout from "./ui/Layout";
 
 export default function App() {
   return (
-    <div>
-      <Hero />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
-      <FAQ />
-      <Section6 />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/reviews" element={<Reviews />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/contact" element={<Contact />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }

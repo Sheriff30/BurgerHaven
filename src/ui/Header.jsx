@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -12,37 +13,39 @@ export default function Header() {
   return (
     <header className="flex justify-between items-center  gap-4">
       {/* LOGO */}
-      <img
-        src="https://navigatorcharters.com/wp-content/uploads/2023/10/Navigator-Charters-Logo-White.png"
-        alt="Navigator Charters Logo"
-        className="w-40"
-      />{" "}
+      <Link to="/">
+        <img
+          src="https://navigatorcharters.com/wp-content/uploads/2023/10/Navigator-Charters-Logo-White.png"
+          alt="Navigator Charters Logo"
+          className="w-40"
+        />{" "}
+      </Link>
       {/* Nav */}
       <nav className="hidden md:block">
         <ul className=" flex justify-between items-center gap-6 uppercase">
           <li>
-            <a href="#">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#">Pricing</a>
+            <Link to="/pricing">Pricing</Link>
           </li>
           <li>
-            <a href="#">Reviews</a>
+            <Link to="/reviews">Reviews</Link>
           </li>
           <li>
-            <a href="#">Gallery</a>
+            <Link to="/gallery">Gallery</Link>
           </li>
           <li>
-            <a href="#">FAQ</a>
+            <Link to="/faq">FAQ</Link>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>
       {/* Book Now */}
       <div className="border py-2 px-4 hidden md:block">
-        <a href="#">Book Now</a>
+        <Link to="/contact">Book Now</Link>
       </div>
       {/* Mobile Nav */}
       <div className="md:hidden" onClick={handleMobileNavOpen}>
@@ -63,22 +66,34 @@ const MobileNav = ({ handleMobileNavOpen }) => {
       </div>
       <ul className=" flex justify-between items-center gap-6 flex-col uppercase my-auto  ">
         <li>
-          <a href="#">Home</a>
+          <Link to="/" onClick={handleMobileNavOpen}>
+            Home
+          </Link>
         </li>
         <li>
-          <a href="#">Pricing</a>
+          <Link to="/pricing" onClick={handleMobileNavOpen}>
+            Pricing
+          </Link>
         </li>
         <li>
-          <a href="#">Reviews</a>
+          <Link to="/reviews" onClick={handleMobileNavOpen}>
+            Reviews
+          </Link>
         </li>
         <li>
-          <a href="#">Gallery</a>
+          <Link to="/gallery" onClick={handleMobileNavOpen}>
+            Gallery
+          </Link>
         </li>
         <li>
-          <a href="#">FAQ</a>
+          <Link to="/faq" onClick={handleMobileNavOpen}>
+            FAQ
+          </Link>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <Link to="/contact" onClick={handleMobileNavOpen}>
+            Contact
+          </Link>
         </li>
       </ul>
     </div>
