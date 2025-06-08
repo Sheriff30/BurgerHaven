@@ -9,7 +9,6 @@ export default function Gallery() {
     "https://lh3.googleusercontent.com/p/AF1QipMXyzvFO8ZWH8EQqOVdbA_sEO4DMsIm3-cIDh2Y=s680-w680-h510",
     "https://lh3.googleusercontent.com/p/AF1QipMDbtIHqFpQxAP6yHgZGV1H22usIlBhGsbtD8fF=s680-w680-h510",
     "https://lh3.googleusercontent.com/p/AF1QipOzf-hhnFbR82Y9jSEDxDQmA_OD6PTyMiIjMH0H=s680-w680-h510",
-    "https://lh3.googleusercontent.com/p/AF1QipOzf-hhnFbR82Y9jSEDxDQmA_OD6PTyMiIjMH0H=s680-w680-h510",
     "https://lh3.googleusercontent.com/p/AF1QipN2R5JtP24Ci2EGv83znl3SmeFeXfYGYV_LPz7e=s680-w680-h510",
     "https://lh3.googleusercontent.com/p/AF1QipMILCbLaH2xe37zjpTmQXQEANMn7yRtvJ0UhWsW=s680-w680-h510",
     "https://lh3.googleusercontent.com/p/AF1QipMYZSppnolCU1AFiZ_NO6mRx3IVaFgrRRRC4oJR=s680-w680-h510",
