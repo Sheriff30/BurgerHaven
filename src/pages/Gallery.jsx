@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import Contact from "../ui/Contact";
 import { motion } from "framer-motion";
@@ -39,7 +40,7 @@ export default function Gallery() {
             >
               <img
                 src={url}
-                alt=""
+                alt="Orange Beach Fishing Pictures"
                 className="w-full h-auto object-cover"
                 loading="lazy"
               />
