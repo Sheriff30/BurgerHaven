@@ -6,6 +6,7 @@ import Section4 from "../ui/Section4";
 import Section5 from "../ui/Section5";
 import FAQ from "../ui/FAQ";
 import Section6 from "../ui/Section6";
+import Contact from "../ui/Contact";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
       <Section5 />
       <FAQ />
       <Section6 />
+      <Contact />
     </div>
   );
 }
