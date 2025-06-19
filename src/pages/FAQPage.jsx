@@ -1,13 +1,13 @@
 import React from "react";
 
-import FAQ from "../ui/FAQ";
+import Faq from "../ui/Faq";
 import Contact from "../ui/Contact";
 import Section6 from "../ui/Section6";
 
 export default function FAQPage() {
   return (
     <div>
-      <FAQ />
+      <Faq />
       <Section6 />
 
       <Contact />
