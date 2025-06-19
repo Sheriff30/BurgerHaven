@@ -9,14 +9,14 @@ export default function Footer() {
         {/* About & Logo */}
         <div className="flex flex-col items-center md:items-start gap-4 md:col-span-1">
           <img
-            src="https://navigatorcharters.com/wp-content/uploads/2023/10/Navigator-Charters-Logo-White.png"
-            alt="Navigator Charters Logo"
-            className="w-48 mb-2"
+            src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png"
+            alt="Burger Haven Logo"
+            className="w-20 mb-2"
           />
           <p className="text-center md:text-left text-base font-light max-w-xs">
-            Don't miss out on the fishing adventure of a lifetime! Secure your
-            spot with Navigator Charters today and experience the thrill of reel
-            charter fishing in Orange Beach.
+            Savor the best burgers in town! Visit Burger Haven for juicy
+            burgers, crispy fries, and delicious shakes. Your new favorite
+            burger spot awaits.
           </p>
         </div>
         {/* Contact Info */}
@@ -25,12 +25,12 @@ export default function Footer() {
             Contact Info
           </h3>
           <p>
-            26619 Perdido Beach Blvd
+            123 Burger Lane
             <br />
-            Orange Beach, AL 36561
+            Food City, USA 12345
           </p>
           <p>Open</p>
-          <p>Mon-Sat 7am-8pm</p>
+          <p>Mon-Sun 11am-10pm</p>
         </div>
         {/* Quick Links */}
         <div className="flex flex-col gap-2 md:col-span-1">
@@ -79,7 +79,7 @@ export default function Footer() {
       </div>
       <div className="container mx-auto border-t border-white/20 pt-6 flex flex-col md:flex-row justify-between items-center text-sm gap-2">
         <span className="opacity-80">
-          ©2025 Navigator Charters. All Rights Reserved.
+          ©2025 Burger Haven. All Rights Reserved.
         </span>
         <div className="flex gap-4">
           <a href="#" className="hover:underline opacity-80">

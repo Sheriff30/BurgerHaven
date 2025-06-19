@@ -16,13 +16,13 @@ export default function ContactPage() {
         className="relative min-h-[60vh] bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://navigatorcharters.com/wp-content/uploads/2023/10/Nav-bg.webp')",
+            "url('https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80')",
         }}
       >
         <div className="absolute inset-0 bg-[#002347]/30"></div>
         <div className="container mx-auto py-15 px-4 relative z-10">
           <h1 className="text-center leading-snug font-bold text-2xl md:text-4xl lg:text-6xl tracking-widest mb-10 text-white">
-            CONTACT NAVIGATOR CHARTERS
+            CONTACT BURGER HAVEN
           </h1>
 
           <div className="max-w-2xl mx-auto bg-white/95 backdrop-blur-sm p-8 shadow-lg rounded-lg">
@@ -119,9 +119,9 @@ export default function ContactPage() {
                     required
                   />
                   <label htmlFor="terms" className="text-sm text-gray-600">
-                    I agree to be contacted by Navigator Charters via the
-                    provided mobile number and email. I have read and agree to
-                    the Navigator Charters terms and privacy policy.
+                    I agree to be contacted by Burger Haven via the provided
+                    mobile number and email. I have read and agree to the Burger
+                    Haven terms and privacy policy.
                   </label>
                 </div>
               </div>

@@ -3,10 +3,10 @@ import { IoIosCall, IoMdMail, IoMdTime, IoMdPin } from "react-icons/io";
 
 export default function Contact() {
   return (
-    <div className="py-15 bg-white text-black px-4">
+    <div className="py-15 bg-white text-[#b3541e] px-4">
       <div className="container mx-auto">
         <h2 className="text-center leading-snug font-bold text-2xl md:text-4xl lg:text-6xl tracking-widest mb-10 uppercase">
-          Contact Navigator Charters
+          Contact Burger Haven
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-8 items-center">
@@ -25,19 +25,19 @@ export default function Contact() {
               <div className="flex items-center gap-4">
                 <IoIosCall className="text-2xl" />
                 <a
-                  href="tel:8502324251"
-                  className="text-lg md:text-xl hover:text-gray-300 transition-colors"
+                  href="tel:5551234567"
+                  className="text-lg md:text-xl hover:text-yellow-600 transition-colors"
                 >
-                  (850) 232-4251
+                  (555) 123-4567
                 </a>
               </div>
               <div className="flex items-center gap-4">
                 <IoMdMail className="text-2xl" />
                 <a
-                  href="mailto:Navigatorcharters@gmail.com"
-                  className="text-lg md:text-xl hover:text-gray-300 transition-colors"
+                  href="mailto:info@burgerhaven.com"
+                  className="text-lg md:text-xl hover:text-yellow-600 transition-colors"
                 >
-                  Navigatorcharters@gmail.com
+                  info@burgerhaven.com
                 </a>
               </div>
             </div>
@@ -65,7 +65,7 @@ export default function Contact() {
 
           <div className="h-[500px]  overflow-hidden shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.6566856675763!2d-87.5717052244374!3d30.27536167480811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889a07a7fdc55555%3A0x7a36b643eae53c89!2sNavigator%20Charters!5e0!3m2!1sen!2sus!4v1749128945842!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.870750726134!2d-73.9776226845936!3d40.7850913793246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f6e8e8e8f%3A0x8e8e8e8e8e8e8e8e!2sCentral%20Park!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus"
               width="100%"
               height="100%"
               style={{ border: 0 }}

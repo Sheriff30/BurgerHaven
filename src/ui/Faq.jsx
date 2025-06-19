@@ -5,39 +5,31 @@ export default function FAQ() {
 
   const charterInfo = [
     {
-      question: "What Should I Bring?",
-      answer: `We recommend you bring sunglasses, sunscreen and a small cooler with your drinks.
-      
-      *(Please wear non marking shoes)*
-      
-      **(No Spray Sunscreen use on the boat).**`,
+      question: "What are your opening hours?",
+      answer: `We are open every day from 11am to 10pm. Join us for lunch, dinner, or a late-night burger craving!`,
     },
     {
-      question: "What is Included?",
-      answer: `Each charter includes the bait, top-notch tackle setup for novices and expert fisherman, and the necessary licenses ensuring everything's above board.
-      
-      And once you've made your impressive catch? Sit back and relax; we've got the fish cleaning covered. We've taken care of all the fishing setup you need for your fishing adventure.`,
+      question: "Do you offer vegetarian or vegan options?",
+      answer: `Yes! We have a delicious Veggie Burger and can customize most burgers to be vegetarian or vegan. Just ask our staff for options.`,
     },
     {
-      question: "Do I need to Bring A Life Jacket?",
-      answer: `There are adult and children life jackets on the boat, however they are very bulky so if you have one that your child likes feel free to bring it along. The life jackets must be Coast Guard approved.
-      
-      (Children under the age of 8 must wear a life jacket at all times.)`,
+      question: "Can I order online or for delivery?",
+      answer: `Absolutely! You can order online for pickup or delivery through our website or popular delivery apps.`,
     },
     {
-      question: "What About Tipping?",
-      answer: `The tip is not included when you purchase your charter. The tip goes directly to the Captian and the recommended tip is typically 15%-20% of the charter fee based on your experience on the boat.`,
+      question: "Do you have gluten-free buns?",
+      answer: `Yes, we offer gluten-free buns for all our burgers. Please let us know your preference when ordering.`,
     },
     {
-      question: "Where Are You Located?",
-      answer: `You'll arrive at Zekes Marina and set out to sea on your orange beach fishing charter. The address is 26619 Perdido Beach Boulevard, Orange Beach, Alabama 36561, United States.`,
+      question: "Where are you located?",
+      answer: `You'll find us at 123 Burger Lane, Food City, USA 12345. We can't wait to serve you!`,
     },
   ];
 
   return (
     <div className="py-15 grid gap-5 text-black px-4 max-w-4xl mx-auto">
       <h2 className="text-center leading-snug font-bold text-2xl md:text-4xl lg:text-6xl tracking-widest mb-8">
-        Frequently Asked Questions
+        Burger Haven FAQ
       </h2>
 
       <div className="space-y-4">

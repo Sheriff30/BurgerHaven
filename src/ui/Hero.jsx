@@ -12,13 +12,11 @@ export default function Hero({ children }) {
           <div className="flex  items-center gap-2 md:gap-3 flex-wrap justify-center sm:justify-between">
             <div className="flex items-center gap-2">
               <IoIosCall className="w-5 h-5 text-white" />
-              <a href="tel:8502324251">(850) 232-4251</a>
+              <a href="tel:5551234567">(555) 123-4567</a>
             </div>
             <div className="flex items-center gap-2">
               <IoMdMail className="w-5 h-5 text-white" />
-              <a href="mailto:navigatorcharters@gmail.com">
-                Navigatorcharters@gmail.com
-              </a>
+              <a href="mailto:info@burgerhaven.com">info@burgerhaven.com</a>
             </div>
           </div>
 
@@ -52,7 +50,7 @@ export default function Hero({ children }) {
               objectFit: "cover",
             }}
           >
-            <source src="/hero-bg.mp4" type="video/mp4" />
+            <source src="/hero.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0   bg-black/30"></div>
         </div>
